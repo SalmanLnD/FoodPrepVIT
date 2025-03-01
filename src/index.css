@@ -5,7 +5,7 @@
 }
 
 html{
-  font-size:62.5%;
+  font-size: 62.5%;
 }
 
 *{
@@ -14,9 +14,11 @@ html{
   box-sizing:border-box;
   font-family: Outfit;
 }
+
 body{
   min-height: 100vh; 
 }
+
 a{
   text-decoration: none;
   color:inherit
@@ -24,4 +26,9 @@ a{
 .app{
   width: 80%;
   margin: auto;
+}
+
+@keyframes fadeIn{
+  0% {opacity: 0;}
+  100% {opacity: 100;}
 }
