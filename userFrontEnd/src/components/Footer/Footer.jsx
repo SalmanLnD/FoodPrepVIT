@@ -10,9 +10,9 @@ const Footer = () => {
                 <img className="footer-logo" src={assets.logo_bottom} alt="" />
                 <p>Food Prep is a full-stack project designed for hands-on teaching, helping students learn full-stack development. It's used by FACEPrep, an ed-tech company focused on equipping students with the skills to achieve their career aspirations.</p>
                 <div className="footer-social-icons">
-                    <img src={assets.facebook_icon} alt="" />
-                    <img src={assets.twitter_icon} alt="" />
-                    <img src={assets.linkedin_icon} alt="" />
+                    <a href="https://www.facebook.com/faceprep/"><img src={assets.facebook_icon} alt="" /></a>
+                    <a href="https://x.com/Faceprepcampus"><img src={assets.twitter_icon} alt="" /></a>
+                    <a href="https://www.linkedin.com/company/faceprep"><img src={assets.linkedin_icon} alt="" /></a>
                 </div>
             </div>
             <div className="footer-content-center">
