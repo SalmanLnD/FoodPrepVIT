@@ -11,3 +11,35 @@
     width: 100%;
     border-radius: 15px 15px 0 0;
 }
+
+.food-info{
+    padding: 20px;
+}
+
+.food-item-name{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.food-item-desc{
+    font-size: 1.2rem;
+    color:#676767;
+    padding:5px 0;
+}
+
+.price-rating{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.food-item-price{
+    color:var(--theme-color);
+    font-size:2rem;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.price-rating img{
+    width: 70px;
+}
