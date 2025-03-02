@@ -7,6 +7,39 @@
     animation: fadeIn 1s;
 }
 
+.food-item-image-container{
+    position: relative;
+}
+
+.food-item-image-container .add{
+    width: 35px;
+    position: absolute;
+    bottom:15px;
+    right:15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.food-item-counter{
+    position: absolute;
+    bottom: 15px;
+    right:15px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    background-color: white;
+    padding: 6px;
+    border-radius: 50px;
+}
+
+.food-item-counter img{
+    width: 30px;
+}
+
+.food-item-counter p{
+    font-size: 1.6rem;
+}
+
 .food-item-img{
     width: 100%;
     border-radius: 15px 15px 0 0;
