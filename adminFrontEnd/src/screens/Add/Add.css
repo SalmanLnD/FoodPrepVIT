@@ -27,9 +27,7 @@
     min-width: 125px;
 }
 
-.add-product-name input,
-.add-product-desc textarea,
-.add-price input,
+.add-product-name input,.add-product-desc textarea,.add-price input,
 .add-category select{
     padding: 10px;
     border: 1px solid var(--theme-color);
@@ -37,11 +35,9 @@
     font-size: 1.4rem;
     color:#333;
 }
-
 .add-product-desc textarea{
     resize: none;
 }
-
 .add-btn{
     max-width: 120px;
     padding: 10px;
@@ -51,7 +47,6 @@
     cursor: pointer;
     border-radius: 5px;
 }
-
 .add-category-price{
     display: flex;
     gap:30px;
