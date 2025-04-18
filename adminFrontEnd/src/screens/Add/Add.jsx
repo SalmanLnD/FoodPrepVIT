@@ -1,8 +1,10 @@
 import {useState,useEffect} from 'react'
 import './Add.css'
 import {assets} from '../../assets/assets'
+import axios from 'axios'
+import {toast} from'react-toastify'
 
-const Add = () => {
+const Add = ({url}) => {
   const [image,setImage] = useState(false);
 
   const [data,setData] = useState({
@@ -25,6 +27,19 @@ const Add = () => {
     formData.append("price",data.price);
     formData.append("category",data.category);
     formData.append("image",image);
+    try {
+      const response = await axios.post(`${url}/api/food/add`,formData)
+      setData({
+        name:"",
+        description:"",
+        price:"",
+        category:"Salad"
+      })
+      setImage(false)
+      toast.success(response.data.message)
+    } catch (error) {
+      toast.error(error.response.data.message)
+    }
   }
 
   return (
